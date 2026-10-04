@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <defs>
+    <radialGradient id="ocean" cx="0.38" cy="0.32" r="0.95">
+      <stop offset="0" stop-color="#4a86b8"/>
+      <stop offset="0.55" stop-color="#2e5f8a"/>
+      <stop offset="1" stop-color="#1d3f5e"/>
+    </radialGradient>
+    <radialGradient id="highlight" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.16"/>
+      <stop offset="0.7" stop-color="#ffffff" stop-opacity="0.04"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="globe"><circle cx="512" cy="512" r="460"/></clipPath>
+  </defs>
+
+  <circle cx="512" cy="512" r="460" fill="url(#ocean)"/>
+
+  <g clip-path="url(#globe)">
+    <!-- 概化大陆：左上欧亚非状陆块 -->
+    <path fill="#6a9a4e" d="M 120 430 C 160 300 320 200 470 220 C 560 235 610 180 700 200 C 780 220 800 300 740 350 C 800 380 820 460 760 500 C 700 545 600 520 560 470 C 520 500 470 500 430 460 C 380 500 300 510 250 470 C 200 490 140 480 120 430 Z"/>
+    <!-- 陆块内荒漠覆色 -->
+    <path fill="#c2a86b" d="M 300 300 C 340 260 430 260 460 310 C 480 350 440 390 390 385 C 340 380 280 350 300 300 Z"/>
+    <!-- 右下美洲状陆块 -->
+    <path fill="#6a9a4e" d="M 620 520 C 690 500 760 540 780 610 C 800 680 760 760 700 800 C 660 830 620 820 610 780 C 580 720 570 640 590 580 C 595 555 600 530 620 520 Z"/>
+    <!-- 岛屿点缀 -->
+    <circle cx="350" cy="620" r="20" fill="#6a9a4e"/>
+    <circle cx="430" cy="700" r="14" fill="#6a9a4e"/>
+    <circle cx="262" cy="565" r="13" fill="#6a9a4e"/>
+    <circle cx="545" cy="640" r="11" fill="#6a9a4e"/>
+
+    <!-- 经纬网格 -->
+    <g fill="none" stroke="#ffffff" stroke-opacity="0.16" stroke-width="6">
+      <ellipse cx="512" cy="512" rx="130" ry="460"/>
+      <ellipse cx="512" cy="512" rx="300" ry="460"/>
+      <line x1="52" y1="512" x2="972" y2="512"/>
+      <path d="M 89.5 330 Q 512 250 934.5 330"/>
+      <path d="M 89.5 694 Q 512 774 934.5 694"/>
+    </g>
+
+    <!-- 左上柔光 -->
+    <circle cx="380" cy="330" r="400" fill="url(#highlight)"/>
+    <!-- 边缘压暗成球 -->
+    <circle cx="512" cy="512" r="453" fill="none" stroke="#12293d" stroke-opacity="0.55" stroke-width="14"/>
+  </g>
+</svg>
