@@ -2,29 +2,16 @@
 <html lang="zh-CN">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
     <title>地球</title>
     <link rel="icon" type="image/svg+xml" href="/icon.svg" />
-    <style>
-      html,
-      body {
-        margin: 0;
-        height: 100%;
-        background: #14161a;
-        overflow: hidden;
-      }
-      #app {
-        height: 100%;
-        display: grid;
-        place-items: center;
-        color: #f0ede6;
-        font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", system-ui, sans-serif;
-        letter-spacing: 0.5px;
-      }
-    </style>
   </head>
   <body>
-    <div id="app">open-earth</div>
+    <div id="app">
+      <div id="canvas-container"></div>
+      <div id="ui-overlay"></div>
+      <div id="loading">加载中…</div>
+    </div>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

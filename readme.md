@@ -10,6 +10,6 @@
 
 ```bash
 pnpm install
-pnpm dev          # 仅前端，Vite 开发服务预览
-pnpm tauri dev    # 桌面外壳
+pnpm dev          # 仅前端，Vite 开发服务预览（端口 1420）
+pnpm tauri:dev    # 桌面外壳；端口被占自动顺延（1421、1422…），可与 pnpm dev 并存
 ```

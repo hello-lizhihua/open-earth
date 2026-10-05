@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "identifier": "com.lizhihua.open-earth",
   "build": {
-    "beforeDevCommand": "node_modules/.bin/vite",
+    "beforeDevCommand": "node scripts/dev-vite.mjs",
     "devUrl": "http://localhost:1420",
     "beforeBuildCommand": "pnpm build",
     "frontendDist": "../dist"
